@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Would you like to enter information about this barcode?"
+        android:id="@+id/barcodePromptText"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Item Name:"
+            android:textSize="20dp"
+            android:id="@+id/itemText"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="20dp" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemEditText"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBaseline="@+id/captText"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Calorie per Serving:"
+            android:textSize="20dp"
+            android:id="@+id/calServText"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="20dp" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calServEditText"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBaseline="@+id/captText"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:id="@+id/okBarcodeButton"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/cancelBarcodeButton"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
